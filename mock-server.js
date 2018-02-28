@@ -4,7 +4,7 @@ mockyeah.get('/upcs', {
   json: {
     success: 'http://cultofthepartyparrot.com/parrots/hd/parrot.gif'
   },
-  latency: 2000
+  latency: 500
 });
 
 mockyeah.get('/ohno', {

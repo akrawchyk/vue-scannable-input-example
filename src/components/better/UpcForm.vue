@@ -45,9 +45,7 @@ export default {
     },
 
     onSubmit: async function () {
-      this.loading = true
-      const showLoading = setTimeout(() => this.showLoading = true,
-        this.showLoadingTimeout)
+      const stopLoading = this.startLoading()
 
       try {
         const res = await fetch('http://localhost:4001/upcs')
@@ -61,9 +59,7 @@ export default {
       } catch (err) {
         this.error = err.message
       } finally {
-        this.loading = false
-        this.showLoading = false
-        clearTimeout(showLoading)
+        stopLoading()
       }
     },
 
