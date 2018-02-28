@@ -4,15 +4,23 @@
     <HelloWorld msg="Welcome to Your Scannable App"/>
 
     <div style="width: 960px; margin: 0 auto; max-width: 100%;">
-      <UpcInput />
+      <UpcInput/>
+    </div>
+
+    <div style="width: 960px; margin: 0 auto; max-width: 100%;">
+      <ScannablePatternInput pattern="upc" />
     </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+
+// ok
 import UpcInput from './components/UpcInput.vue'
 
+// better
+import ScannablePatternInput from './components/better/ScannablePatternInput.vue'
 // import UpcForm from './components/UpcForm.vue'
 // import LpForm from './components/UpcForm.vue'
 
@@ -20,7 +28,10 @@ export default {
   name: 'app',
   components: {
     HelloWorld,
-    UpcInput
+    UpcInput,
+
+    // better
+    ScannablePatternInput
   }
 }
 </script>

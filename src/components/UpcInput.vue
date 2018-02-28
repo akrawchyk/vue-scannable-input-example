@@ -1,7 +1,7 @@
 <template>
   <div class="BarcodeInput" v-bind:class="classObject">
     <div class="BarcodeInput-inputWrap">
-      <input v-model="value" v-on:input="reset()" v-on:keyup.enter="onSubmit($event.target.value)"
+      <input v-model="value" v-on:input="reset()" v-on:keyup.enter="onSubmit()"
       v-bind:disabled="loading" placeholder="UPC" class="BarcodeInput-input" id="upc">
     </div>
     <label v-if="error" class="BarcodeInput-error" for="upc">{{ error }}</label>
@@ -18,7 +18,7 @@
 // 2. start with hardcoded scan type: UPC
 // 3. break into components: barcode input, upc form, lp form
 
-const UPC_RE = /\d{12,14}/
+const UPC_RE = /\d{12,15}/g
 
 function validateUpc (val) {
   return UPC_RE.test(val)
@@ -46,10 +46,10 @@ export default {
   },
   methods: {
     // https://vuejs.org/v2/api/#v-on
-    onSubmit: async function (val) {
+    onSubmit: async function () {
       this.reset()
 
-      if (!validateUpc(val)) {
+      if (!validateUpc(this.value)) {
         this.error = 'Invalid UPC'
         return
       }
@@ -66,7 +66,6 @@ export default {
           throw Error(data.error)
         }
 
-        this.value = val
         this.success = data.success
       } catch (err) {
         this.error = err.message
