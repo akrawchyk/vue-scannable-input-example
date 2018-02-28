@@ -1,17 +1,26 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Scannable App"/>
+
+    <div style="width: 960px; margin: 0 auto; max-width: 100%;">
+      <UpcInput />
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import UpcInput from './components/UpcInput.vue'
+
+// import UpcForm from './components/UpcForm.vue'
+// import LpForm from './components/UpcForm.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    UpcInput
   }
 }
 </script>
