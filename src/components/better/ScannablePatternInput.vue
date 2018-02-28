@@ -34,7 +34,7 @@ export default {
     }
   },
   computed: {
-    displayPlaceholder: function () {
+    displayPlaceholder () {
       if (this.placeholder === 'Scan') {
         if (knownPatterns[this.pattern]) {
           return this.pattern.toUpperCase()
@@ -45,7 +45,7 @@ export default {
     }
   },
   methods: {
-    validScan: function(val) {
+    validScan (val) {
       if (!this.pattern) {
         return true
       }
@@ -59,11 +59,11 @@ export default {
       return pattern.test(val)
     },
 
-    onKeypress: function () {
+    onKeypress () {
       this.$emit('keypress')
     },
 
-    onSubmit: function (val) {
+    onSubmit (val) {
       const formattedVal = val.trim()
 
       // set formatted back to input if needed

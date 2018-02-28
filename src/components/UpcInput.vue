@@ -26,7 +26,7 @@ function validateUpc (val) {
 
 export default {
   name: 'BarcodeInput',
-  data: function () {
+  data () {
     return {
       value: '',
       error: '',
@@ -37,7 +37,7 @@ export default {
     }
   },
   computed: {
-    classObject: function () {
+    classObject () {
       return {
         'BarcodeInput--error': this.value && this.error,
         'BarcodeInput--valid': this.value && this.success
@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     // https://vuejs.org/v2/api/#v-on
-    onSubmit: async function () {
+    async onSubmit () {
       this.reset()
 
       if (!validateUpc(this.value)) {
@@ -76,7 +76,7 @@ export default {
       }
     },
 
-    reset: function () {
+    reset () {
       this.error = ''
       this.success = ''
     }

@@ -8,7 +8,7 @@
       <UpcInput/>
 
       <h2>Componentized UPC Form</h2>
-      <UpcForm/>
+      <UpcForm v-bind:showLoadingTimeout="1000"/>
     </div>
   </div>
 </template>
@@ -22,6 +22,8 @@ import UpcInput from './components/UpcInput.vue'
 // better
 import ScannablePatternInput from './components/better/ScannablePatternInput.vue'
 import UpcForm from './components/better/UpcForm.vue'
+
+// future
 // import LpForm from './components/better/LpForm.vue'
 
 export default {

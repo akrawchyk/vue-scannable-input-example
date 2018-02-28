@@ -24,7 +24,7 @@ export default {
   components: {
     ScannablePatternInput
   },
-  data: function () {
+  data () {
     return {
       value: '',
       error: '',
@@ -32,7 +32,7 @@ export default {
     }
   },
   computed: {
-    classObject: function () {
+    classObject () {
       return {
         'UpcForm--error': this.error,
         'UpcForm--valid': this.success
@@ -40,11 +40,11 @@ export default {
     }
   },
   methods: {
-    onError: function () {
+    onError () {
       this.error = 'Invalid UPC'
     },
 
-    onSubmit: async function () {
+    async onSubmit () {
       const stopLoading = this.startLoading()
 
       try {
@@ -63,7 +63,7 @@ export default {
       }
     },
 
-    reset: function () {
+    reset () {
       this.error = ''
       this.success = ''
     }
