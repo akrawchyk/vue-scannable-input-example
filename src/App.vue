@@ -4,11 +4,11 @@
     <HelloWorld msg="Welcome to Your Scannable App"/>
 
     <div style="width: 960px; margin: 0 auto; max-width: 100%;">
+      <h2>Coupled UPC Input</h2>
       <UpcInput/>
-    </div>
 
-    <div style="width: 960px; margin: 0 auto; max-width: 100%;">
-      <ScannablePatternInput pattern="upc" />
+      <h2>Componentized UPC Form</h2>
+      <UpcForm/>
     </div>
   </div>
 </template>
@@ -21,8 +21,8 @@ import UpcInput from './components/UpcInput.vue'
 
 // better
 import ScannablePatternInput from './components/better/ScannablePatternInput.vue'
-// import UpcForm from './components/UpcForm.vue'
-// import LpForm from './components/UpcForm.vue'
+import UpcForm from './components/better/UpcForm.vue'
+// import LpForm from './components/better/LpForm.vue'
 
 export default {
   name: 'app',
@@ -31,7 +31,8 @@ export default {
     UpcInput,
 
     // better
-    ScannablePatternInput
+    ScannablePatternInput,
+    UpcForm
   }
 }
 </script>

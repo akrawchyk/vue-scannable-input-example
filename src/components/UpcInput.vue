@@ -18,7 +18,7 @@
 // 2. start with hardcoded scan type: UPC
 // 3. break into components: barcode input, upc form, lp form
 
-const UPC_RE = /\d{12,15}/g
+const UPC_RE = /\d{12,15}/
 
 function validateUpc (val) {
   return UPC_RE.test(val)
@@ -33,7 +33,7 @@ export default {
       success: '',
       loading: false,
       showLoading: false,
-      showLoadingTimeout: 1000
+      showLoadingTimeout: 900
     }
   },
   computed: {
