@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="UpcInput.invalidUpcSetsErrorState"
+    errors="0" failures="0" hostname="" id="" package="UpcInput" skipped="0"
+    tests="1" time="1.092" timestamp="Thu, 01 Mar 2018 02:47:14 GMT">
+  
+    <testcase name="invalid upc sets error state" classname="UpcInput.invalidUpcSetsErrorState" time="1.092" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

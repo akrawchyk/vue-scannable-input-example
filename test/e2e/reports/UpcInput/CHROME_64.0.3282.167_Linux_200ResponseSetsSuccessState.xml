@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="UpcInput.200ResponseSetsSuccessState"
+    errors="0" failures="1" hostname="" id="" package="UpcInput" skipped="0"
+    tests="1" time="1.116" timestamp="Thu, 01 Mar 2018 02:47:10 GMT">
+  
+    <testcase name="200 response sets success state" classname="UpcInput.200ResponseSetsSuccessState" time="1.116" assertions="3">
+
+    
+
+      <failure message="Testing if element &lt;.UpcInput--success img&gt; is visible.">    at Object.200 response sets success state (/home/andrew/Developer/vue-scannable-input/test/e2e/specs/UpcInput/200ResponseSetsSuccessState.js:12:15)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
