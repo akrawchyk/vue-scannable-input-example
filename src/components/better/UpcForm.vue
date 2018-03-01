@@ -35,7 +35,7 @@ export default {
     classObject () {
       return {
         'UpcForm--error': this.error,
-        'UpcForm--valid': this.success
+        'UpcForm--success': this.success
       }
     }
   },
@@ -48,7 +48,7 @@ export default {
       const stopLoading = this.startLoading()
 
       try {
-        const res = await fetch('http://localhost:4001/upcs')
+        const res = await fetch(window.UPCS_URL)
         const data = await res.json()
 
         if (!res.ok) {
@@ -76,7 +76,7 @@ export default {
   background-color: red;
 }
 
-.UpcForm--valid >>> .ScannablePatternInput {
+.UpcForm--success >>> .ScannablePatternInput {
   background-color: green;
 }
 </style>

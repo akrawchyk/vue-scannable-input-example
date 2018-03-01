@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="upc.200ResponseSetsSuccessState"
+    errors="0" failures="0" hostname="" id="" package="upc" skipped="0"
+    tests="1" time="1.216" timestamp="Thu, 01 Mar 2018 00:07:18 GMT">
+  
+    <testcase name="200 response sets success state" classname="upc.200ResponseSetsSuccessState" time="1.216" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

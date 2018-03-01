@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="upc.validUpcSetsLoadingState"
+    errors="0" failures="0" hostname="" id="" package="upc" skipped="0"
+    tests="1" time="0.9240" timestamp="Wed, 28 Feb 2018 23:41:32 GMT">
+  
+    <testcase name="valid upc sets loading state" classname="upc.validUpcSetsLoadingState" time="0.9240" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

@@ -1,8 +1,15 @@
 <template>
   <div class="BarcodeInput" v-bind:class="classObject">
     <div class="BarcodeInput-inputWrap">
-      <input v-model="value" v-on:input="reset()" v-on:keyup.enter="onSubmit()"
-      v-bind:disabled="loading" placeholder="UPC" class="BarcodeInput-input" id="upc">
+      <input
+      v-model="value"
+      v-on:input="reset()"
+      v-on:keyup.enter="onSubmit()"
+      v-bind:disabled="loading"
+      placeholder="UPC"
+      type="text"
+      class="BarcodeInput-input"
+      id="upc">
     </div>
     <label v-if="error" class="BarcodeInput-error" for="upc">{{ error }}</label>
     <p v-if="showLoading">Loading...</p>
@@ -40,7 +47,7 @@ export default {
     classObject () {
       return {
         'BarcodeInput--error': this.value && this.error,
-        'BarcodeInput--valid': this.value && this.success
+        'BarcodeInput--success': this.value && this.success
       }
     }
   },
@@ -98,7 +105,7 @@ export default {
   height: 40px;
 }
 
-.BarcodeInput--valid .BarcodeInput-inputWrap {
+.BarcodeInput--success .BarcodeInput-inputWrap {
   background-color: green;
 }
 

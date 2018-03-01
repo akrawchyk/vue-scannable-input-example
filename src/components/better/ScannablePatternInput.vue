@@ -1,12 +1,13 @@
 <template>
   <div class="ScannablePatternInput">
     <input class="ScannablePatternInput-input"
-    ref="input"
     v-bind:value="value"
     v-on:keyup.enter="onSubmit($event.target.value)"
     v-on:keypress="onKeypress()"
     v-bind:disabled="disabled"
     v-bind:placeholder="displayPlaceholder"
+    ref="input"
+    type="text"
     >
   </div>
 </template>
