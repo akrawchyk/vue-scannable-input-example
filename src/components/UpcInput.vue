@@ -66,7 +66,7 @@ export default {
         this.showLoadingTimeout)
 
       try {
-        const res = await fetch(window.UPCS_URL)
+        const res = await fetch(`${window.UPCS_URL}?upc=${this.value}`)
         const data = await res.json()
 
         if (!res.ok) {

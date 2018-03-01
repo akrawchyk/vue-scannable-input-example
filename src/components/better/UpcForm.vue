@@ -9,7 +9,7 @@
       pattern="upc"
       />
     <p v-if="showLoading">Loading...</p>
-    <label v-if="error" for="upc">{{ error }}</label>
+    <label v-if="error">{{ error }}</label>
     <img v-if="success" v-bind:src="success" alt="success">
   </div>
 </template>
@@ -48,7 +48,7 @@ export default {
       const stopLoading = this.startLoading()
 
       try {
-        const res = await fetch(window.UPCS_URL)
+        const res = await fetch(`${window.UPCS_URL}?upc=${this.value}`)
         const data = await res.json()
 
         if (!res.ok) {

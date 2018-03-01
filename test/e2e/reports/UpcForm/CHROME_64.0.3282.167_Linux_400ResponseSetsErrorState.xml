@@ -5,9 +5,9 @@
 
   <testsuite name="UpcForm.400ResponseSetsErrorState"
     errors="0" failures="0" hostname="" id="" package="UpcForm" skipped="0"
-    tests="1" time="1.202" timestamp="Thu, 01 Mar 2018 03:01:37 GMT">
+    tests="1" time="1.136" timestamp="Thu, 01 Mar 2018 04:37:08 GMT">
   
-    <testcase name="400 response sets error state" classname="UpcForm.400ResponseSetsErrorState" time="1.202" assertions="3">
+    <testcase name="400 response sets error state" classname="UpcForm.400ResponseSetsErrorState" time="1.136" assertions="3">
 
     
 

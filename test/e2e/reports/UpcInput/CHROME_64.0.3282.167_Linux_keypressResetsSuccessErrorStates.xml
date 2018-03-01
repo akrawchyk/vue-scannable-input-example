@@ -5,9 +5,9 @@
 
   <testsuite name="UpcInput.keypressResetsSuccessErrorStates"
     errors="0" failures="0" hostname="" id="" package="UpcInput" skipped="0"
-    tests="2" time="2.514" timestamp="Thu, 01 Mar 2018 03:01:47 GMT">
+    tests="2" time="2.300" timestamp="Thu, 01 Mar 2018 04:37:18 GMT">
   
-    <testcase name="keypress resets error state" classname="UpcInput.keypressResetsSuccessErrorStates" time="1.173" assertions="3">
+    <testcase name="keypress resets error state" classname="UpcInput.keypressResetsSuccessErrorStates" time="1.082" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="keypress resets success state" classname="UpcInput.keypressResetsSuccessErrorStates" time="1.341" assertions="3">
+    <testcase name="keypress resets success state" classname="UpcInput.keypressResetsSuccessErrorStates" time="1.218" assertions="3">
 
     
 
