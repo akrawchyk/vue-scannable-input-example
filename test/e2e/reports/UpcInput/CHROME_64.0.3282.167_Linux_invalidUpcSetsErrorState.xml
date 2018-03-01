@@ -5,9 +5,9 @@
 
   <testsuite name="UpcInput.invalidUpcSetsErrorState"
     errors="0" failures="0" hostname="" id="" package="UpcInput" skipped="0"
-    tests="1" time="1.092" timestamp="Thu, 01 Mar 2018 02:47:14 GMT">
+    tests="1" time="1.137" timestamp="Thu, 01 Mar 2018 03:01:46 GMT">
   
-    <testcase name="invalid upc sets error state" classname="UpcInput.invalidUpcSetsErrorState" time="1.092" assertions="3">
+    <testcase name="invalid upc sets error state" classname="UpcInput.invalidUpcSetsErrorState" time="1.137" assertions="3">
 
     
 

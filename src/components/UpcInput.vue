@@ -1,6 +1,6 @@
 <template>
-  <div class="BarcodeInput" v-bind:class="classObject">
-    <div class="BarcodeInput-inputWrap">
+  <div class="UpcInput" v-bind:class="classObject">
+    <div class="UpcInput-inputWrap">
       <input
       v-model="value"
       v-on:input="reset()"
@@ -8,12 +8,12 @@
       v-bind:disabled="loading"
       placeholder="UPC"
       type="text"
-      class="BarcodeInput-input"
+      class="UpcInput-input"
       id="upc">
     </div>
-    <label v-if="error" class="BarcodeInput-error" for="upc">{{ error }}</label>
+    <label v-if="error" class="UpcInput-error" for="upc">{{ error }}</label>
     <p v-if="showLoading">Loading...</p>
-    <img v-if="success" v-bind:src="success" alt="success">
+    <img v-if="success" v-bind:src="success" alt="success parrot">
   </div>
 </template>
 
@@ -32,7 +32,7 @@ function validateUpc (val) {
 }
 
 export default {
-  name: 'BarcodeInput',
+  name: 'UpcInput',
   data () {
     return {
       value: '',
@@ -46,8 +46,8 @@ export default {
   computed: {
     classObject () {
       return {
-        'BarcodeInput--error': this.value && this.error,
-        'BarcodeInput--success': this.value && this.success
+        'UpcInput--error': this.value && this.error,
+        'UpcInput--success': this.value && this.success
       }
     }
   },
@@ -66,7 +66,7 @@ export default {
         this.showLoadingTimeout)
 
       try {
-        const res = await fetch('http://localhost:4001/upcs')
+        const res = await fetch(window.UPCS_URL)
         const data = await res.json()
 
         if (!res.ok) {
@@ -92,24 +92,24 @@ export default {
 </script>
 
 <style scoped>
-.BarcodeInput-inputWrap {
+.UpcInput-inputWrap {
   background-color: #333;
   border-radius: 5px;
   padding: 12px;
   display: flex;
 }
 
-.BarcodeInput-input {
+.UpcInput-input {
   flex: 1 1 0%;
   text-align: center;
   height: 40px;
 }
 
-.BarcodeInput--success .BarcodeInput-inputWrap {
+.UpcInput--success .UpcInput-inputWrap {
   background-color: green;
 }
 
-.BarcodeInput--error .BarcodeInput-inputWrap {
+.UpcInput--error .UpcInput-inputWrap {
   background-color: red;
 }
 </style>

@@ -23,7 +23,7 @@ import UpcInput from './components/UpcInput.vue'
 import ScannablePatternInput from './components/better/ScannablePatternInput.vue'
 import UpcForm from './components/better/UpcForm.vue'
 
-// future
+// TODO
 // import LpForm from './components/better/LpForm.vue'
 
 export default {
@@ -35,6 +35,8 @@ export default {
     // better
     ScannablePatternInput,
     UpcForm
+    // TODO
+    // LpForm
   }
 }
 </script>
